@@ -1,0 +1,31 @@
+/micro-assincrono
+├── app/
+│   ├── api/
+│   │   ├── endpoints/
+│   │   │   ├── __init__.py
+│   │   │   └── v1/
+│   │   │       ├── __init__.py
+│   │   │       └── health.py        # Exemplo de rota simples
+│   │   └── routers.py               # Agrega as rotas
+│   ├── core/
+│   │   ├── config.py                # Configurações gerais (settings, variáveis de ambiente)
+│   │   └── events.py                # Funções de startup/shutdown do FastAPI
+│   ├── db/
+│   │   ├── __init__.py
+│   │   ├── session.py               # Gerenciamento de sessões de banco de dados (async)
+│   │   └── models.py                # Modelos de dados do ORM
+│   ├── services/                    # Lógica de negócio (business logic)
+│   │   ├── __init__.py
+│   │   └── user_service.py
+│   ├── schemas/                     # Modelos Pydantic (validação de entrada/saída)
+│   │   ├── __init__.py
+│   │   └── user_schema.py
+│   └── main.py                      # Ponto de entrada da aplicação (instancia o FastAPI)
+├── tests/
+│   ├── conftest.py                  # Configurações e fixtures para testes
+│   └── test_health.py
+├── .env.example
+├── .gitignore
+├── Dockerfile
+├── requirements.txt                 # Dependências do Python
+└── README.md
