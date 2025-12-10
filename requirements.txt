@@ -1,0 +1,10 @@
+# requirements.txt
+
+fastapi
+uvicorn[standard]
+pydantic>=2.0
+# Para banco de dados assíncrono (ex: SQLAlchemy + AsyncPG)
+# sqlalchemy
+# asyncpg
+# Outras dependências úteis
+python-dotenv # Para gerenciar variáveis de ambiente
